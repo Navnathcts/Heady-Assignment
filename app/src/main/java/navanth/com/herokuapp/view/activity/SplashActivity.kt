@@ -5,6 +5,7 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import navanth.com.herokuapp.R
 import navanth.com.herokuapp.Utils.openActivity
+import navanth.com.herokuapp.model.ProductDataHolder
 
 /**
  * Activity class to present application Splash screen
@@ -21,6 +22,7 @@ class SplashActivity : AppCompatActivity(), Runnable {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+        ProductDataHolder.productDataMap?.clear()
         splashTimeHandler = Handler()
         splashTimeHandler?.postDelayed(this,
             SPLASH_RUN_TIME
