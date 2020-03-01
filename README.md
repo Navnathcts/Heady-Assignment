@@ -19,6 +19,7 @@ ViewModel interacts with model and also prepares observable(s) that can be obser
 One of the important implementation strategies of this layer is to decouple it from the View, i.e, ViewModel should not be aware about the view who is interacting with.
 
 View:
+
 Finally, the view role in this pattern is to observe (or subscribe to) a ViewModel observable to get data in order to update UI elements accordingly.
 
 3.Kotlin language is used for development. 
