@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlContainer"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtProdCatalog"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/home_info_text"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtLoaderMessage"
+        style="@style/LabelStyle"
+        android:layout_below="@+id/progressBar"
+        android:gravity="center"
+        android:text="@string/loading_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtNoDataMessage"
+        style="@style/LabelStyle"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/search_error_no_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRefreshData"
+        style="@style/LabelStyle"
+        android:layout_below="@+id/txtNoDataMessage"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProdCatalog"
+        android:paddingBottom="40dp"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/swProdListWithRank"
+        style="@style/SectionPaddedStyle"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:text="@string/show_data_by_rank"
+        android:visibility="gone" />
+</RelativeLayout>

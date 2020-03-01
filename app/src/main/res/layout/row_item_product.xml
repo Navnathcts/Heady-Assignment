@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SectionLayoutStyle"
+    android:layout_margin="1dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/LabelStyle"
+        android:padding="0dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:text="Product name" />
+
+    <LinearLayout
+        style="@style/SectionLayoutStyle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewCount"
+            style="@style/LayoutWrapContentStyle"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subtitle_text_size"
+            tools:text="2 Views" />
+
+        <TextView
+            android:id="@+id/txtOrderCount"
+            style="@style/LayoutWrapContentStyle"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subtitle_text_size"
+            tools:text="2 Orders" />
+
+        <TextView
+            android:id="@+id/txtShares"
+            style="@style/LayoutWrapContentStyle"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subtitle_text_size"
+            tools:text="2 Shares" />
+
+    </LinearLayout>
+
+</LinearLayout>

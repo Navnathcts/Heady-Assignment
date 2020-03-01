@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Heady Assignment</string>
+    <string name="loading_text">Loading products, please wait…</string>
+    <string name="network_error">No network connection.</string>
+    <string name="error_message">Something went wrong, Please try again.</string>
+    <string name="home_info_text">Product Catalogue</string>
+    <string name="search_error_no_text">No Data Available</string>
+    <string name="data_by_category">Show category list</string>
+    <string name="show_data_by_rank">Show products sorted by Ranking</string>
+    <string name="views">%1$d Views</string>
+    <string name="orders">%1$d Orders</string>
+    <string name="shares">%1$d Shares</string>
+    <string name="refresh">Refresh</string>
+    <string name="welcome_message">Welcome to Heady.....</string>
+    <string name="no_connection_message">No internet connection!</string>
+</resources>
